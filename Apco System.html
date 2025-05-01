@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>APCO System - Agile Product Collaboration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #aaceb8;
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #aaceb8;
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav.show {
+      display: flex;
+    }
+    nav a {
+      color: white;
+      margin: 0.5em 0;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #8bb9a2;
+    }
+    .content {
+      max-width: 900px;
+      margin: 2em auto;
+      background-color: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #0f5132;
+    }
+    .content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1em;
+    }
+    footer {
+      background-color: #aaceb8;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('menuNav');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>APCO System</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="menuNav">
+      <a href="Index.html">Home</a>
+      <a href="Agile Team.html">Agile Team</a>
+      <a href="Agile Journey.html">Agile Journey</a>
+      <a href="APCO System.html">APCO System</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Agile Product Collaboration System</h2>
+    <p>Diagram ini menunjukkan arsitektur sistem kolaborasi Agile APCO, di mana berbagai teknologi dan data saling terhubung untuk menciptakan ekosistem digital yang mendukung pengambilan keputusan berbasis data dan prediksi.</p>
+    <ul>
+      <li><strong>Base Map & Info:</strong> Menyediakan data eksternal seperti cuaca, forestry, dan parameter ESG.</li>
+      <li><strong>IoT & SCADA:</strong> Menangkap data lapangan secara real-time melalui sensor, PLC, dan SCADA.</li>
+      <li><strong>APCO MW & Edge:</strong> Berfungsi sebagai pusat pengolahan data dan deteksi anomali.</li>
+      <li><strong>Digital Twin:</strong> Mengintegrasikan Autodesk AEC & Tandem untuk visualisasi dan simulasi.</li>
+      <li><strong>Asset Management:</strong> Sistem manajemen aset menggunakan IBM Maximo & Mobile MAS.</li>
+    </ul>
+    <p>Semua elemen ini terhubung untuk mendukung efisiensi operasional, keberlanjutan, dan transformasi digital dalam organisasi.</p>
+
+    <!-- Optional image (replace 'diagram.jpg' with actual image filename) -->
+    <img src="Apco presentation for solar panel_1_20250501_2077230074815486604.png" alt="Diagram APCO System">
+  </section>
+
+  <footer>
+    <p>© 2025 APCO - Agile Product Collaboration | Contact us on social media</p>
+  </footer>
+</body>
+</html>

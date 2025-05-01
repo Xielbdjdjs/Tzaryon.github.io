@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Monitoring - APCO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }header {
+  background-color: #aaceb8;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #aaceb8;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+nav.show {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  margin: 0.5em 0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #8bb9a2;
+}
+
+.dashboard {
+  padding: 2em;
+}
+
+.dashboard h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1em;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.icons {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.icons span {
+  background-color: #e0f2fe;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+footer {
+  background-color: #aaceb8;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>System Monitoring</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Agile Team.html">Agile Team</a>
+      <a href="Agile Journey.html">Agile Journey</a>
+      <a href="Monitoring.html">Monitoring</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>  <section class="dashboard">
+    <h2>Live Monitoring Overview</h2>
+<div class="card">
+  <img src="Apco presentation for solar panel_1_20250501_208359216961426061.png" alt="Apartment Monitoring" style="width:100%; border-radius:8px; margin-bottom:1em;">
+  <h3>Apartment 1 – Status: Low (20A)</h3>
+  <p>Real-time monitoring of residential energy use.</p>
+  <div class="icons">
+    <span>Camera</span>
+    <span>Climate Risk</span>
+    <span>Traffic</span>
+  </div>
+</div>
+<div class="card">
+  <img src="Apco presentation for solar panel_1_20250501_897237450524594942.png" alt="Apartment Monitoring" style="width:100%; border-radius:8px; margin-bottom:1em;">
+        <h3>Solar Plant – Status: Warning (100A)</h3>
+        <p>Alerts detected in solar plant inverter system.</p>
+        <div class="icons">
+          <span>Anomaly</span>
+          <span>Camera</span>
+          <span>Weather</span>
+        </div>
+      </div>
+<div class="card">
+  <img src="Apco presentation for solar panel_1_20250501_5143591413809932575.png" alt="Apartment Monitoring" style="width:100%; border-radius:8px; margin-bottom:1em;">
+        <h3>City Traffic Node – Status: Normal</h3>
+        <p>Traffic flow in normal condition with IoT camera integration.</p>
+        <div class="icons">
+          <span>Camera</span>
+          <span>IoT</span>
+          <span>Analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>  <footer>
+    <p>© 2025 APCO - Agile Product Collaboration | Contact us on social media</p>
+  </footer>
+</body>
+</html>

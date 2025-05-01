@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>APCO - Agile Product Collaboration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }header {
+  background-color: #aaceb8;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}.menu-icon { display: flex; flex-direction: column; cursor: pointer; z-index: 1000; }
+
+.menu-icon div { width: 25px; height: 3px; background-color: white; margin: 4px 0; }
+
+nav { display: none; flex-direction: column; position: absolute; top: 60px; right: 20px; background-color: #aaceb8; border: 1px solid #ccc; padding: 1em; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 999; }
+
+nav.show { display: flex; }
+
+nav a { color: white; margin: 0.5em 0; text-decoration: none; font-weight: bold; padding: 0.5em 1em; border-radius: 5px; transition: background-color 0.3s; }
+
+nav a:hover { background-color: #8bb9a2; }
+
+.hero { text-align: center; padding: 4em 2em; background-color: #e0f2fe; }
+
+.hero h1 { font-size: 2.5em; }
+
+.hero p { font-size: 1.2em; margin-top: 1em; }
+
+.hero button { margin-top: 2em; padding: 0.8em 2em; background-color: #aaceb8; color: white; border: none; border-radius: 5px; cursor: pointer; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1em; padding: 2em; }
+
+.card { background-color: white; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+
+.card h3 { margin-top: 0; }
+
+.icons { margin-top: 1em; display: flex; gap: 1em; flex-wrap: wrap; }
+
+.icons span { background-color: white; padding: 0.5em 1em; border-radius: 5px; font-size: 0.9em; }
+
+footer { background-color: #aaceb8; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+
+.contact-section { padding: 2em; text-align: center; background-color: #ffffff; max-width: 800px; margin: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+.contact-section h2 { margin-top: 0; } </style>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('show');
+    }
+  </script></head>
+<body>
+  <header>
+    <img src="Apco presentation for solar panel_20250501_1775326955522637651.png" alt="APCO Logo" style="height: 40px;">
+<div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="menuNav">
+      <a href="Index.html">Home</a>
+      <a href="Agile Team.html">Agile Team</a>
+      <a href="Agile Journey.html">Agile Journey</a>
+      <a href="APCO System.html">APCO System</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>  <section class="hero">
+    <h1>Welcome to APCO</h1>
+    <p>Empowering decisions with integrated, real-time monitoring from smart energy, climate, traffic and IoT data.</p>
+    <button onclick="location.href='#solutions'">Explore Our Solutions</button>
+  </section>  <section class="cards">
+    <h2 style="text-align: center;">About APCO</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">APCO is a smart platform that unifies data from sensors, IoT devices, cameras, and systems to deliver actionable insights for better energy, environment, and city management. Our platform supports apartment complexes, solar plants, and city infrastructure through intelligent monitoring and automation.</p>
+  </section>  <section class="cards">
+    <h2 style="text-align: center;">Monitoring Examples</h2>
+    <div class="card">
+      <h3>Apartment 1 – Low 20A</h3>
+      <div class="icons">
+        <span>Camera</span>
+        <span>Detail</span>
+        <span>Climate Risk</span>
+        <span>Traffic</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Solar Plant – Warning 100A</h3>
+      <div class="icons">
+        <span>Camera</span>
+        <span>Detail</span>
+        <span>Climate Risk</span>
+        <span>Traffic</span>
+      </div>
+    </div>
+  </section>  <section id="solutions" class="cards">
+    <h2 style="text-align: center;">Our Core Solutions</h2>
+    <div class="card">
+      <h3>IoT Integration</h3>
+      <p>Real-time sensor and device data integration across all assets.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Twin</h3>
+      <p>Virtual representation of apartments, solar panels, and streets for monitoring.</p>
+    </div>
+    <div class="card">
+      <h3>Climate & Weather Data</h3>
+      <p>Monitor climate risk, forestry data, and weather for predictive actions.</p>
+    </div>
+    <div class="card">
+      <h3>Anomaly Detection</h3>
+      <p>Automatically detect unusual activity or failure in system components.</p>
+    </div>
+    <div class="card">
+      <h3>Asset Management</h3>
+      <p>Track, monitor, and manage physical assets across distributed locations.</p>
+    </div>
+    <div class="card">
+      <h3>Business Dashboard</h3>
+      <p>Visualize performance and actionable KPIs through real-time dashboards.</p>
+    </div>
+  </section>  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Need support or want to collaborate? Reach us through:</p>
+    <p>Email: info@apco.co.id</p>
+    <p>Phone: +62 812-3456-7890</p>
+    <p>Office: Jakarta, Indonesia</p>
+  </section>  <footer>
+    &copy; 2025 APCO - Agile Product Collaboration | Contact us on social media
+  </footer>
+</body>
+</html>

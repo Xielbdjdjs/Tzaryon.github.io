@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agile Product Collaboration Design</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #aaceb8;
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #aaceb8;
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav.show {
+      display: flex;
+    }
+    nav a {
+      color: white;
+      margin: 0.5em 0;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #8bb9a2;
+    }
+    .content {
+      max-width: 900px;
+      margin: 2em auto;
+      background-color: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #0f5132;
+    }
+    .content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1em;
+    }
+    footer {
+      background-color: #aaceb8;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('menuNav');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Agile Collaboration</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="menuNav">
+      <a href="Index.html">Home</a>
+      <a href="Agile Team.html">Agile Team</a>
+      <a href="Agile Journey.html">Agile Journey</a>
+      <a href="APCO System.html">APCO System</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Agile Product Collaboration Design</h2>
+    <p>Desain kolaborasi produk Agile ini memanfaatkan integrasi antara IoT sensor, pemrosesan awan, sistem manajemen aset, dan pusat komando untuk menciptakan ekosistem cerdas yang responsif.</p>
+    <ol>
+      <li><strong>IoT Sensor:</strong> Mendeteksi aktivitas dari perangkat fisik dan mengirimkan sinyal ke server APCO.</li>
+      <li><strong>Command Center:</strong> Memantau aktivitas dan menerima notifikasi jika ada anomali.</li>
+      <li><strong>Technician:</strong> Mendapat informasi dan work order dari sistem Maximo untuk inspeksi atau perbaikan.</li>
+    </ol>
+    <p>Diagram di bawah ini memperlihatkan hubungan antar komponen dalam arsitektur Agile Collaboration yang dihosting di AWS dan menggunakan teknologi IBM Maximo serta Autodesk Tandem.</p>
+<img src="Apco presentation for solar panel_1_20250501_1795731895727674831.png" alt="Apco Diagram System">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Agile Solution - The Way to Agile World!</p>
+  </footer>
+</body>
+</html>

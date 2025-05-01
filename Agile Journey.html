@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agile Journey - APCO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }header {
+  background-color: #aaceb8;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #aaceb8;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav.show {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  margin: 0.5em 0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #8bb9a2;
+}
+
+.timeline {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.year {
+  background-color: white;
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 5px solid #aaceb8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.year h3 {
+  margin-top: 0;
+  color: #0f5132;
+}
+
+footer {
+  background-color: #aaceb8;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('menuNav');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Agile Journey</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="menuNav">
+      <a href="Index.html">Home</a>
+      <a href="Agile Team.html">Agile Team</a>
+      <a href="Agile Journey.html">Agile Journey</a>
+      <a href="APCO System.html">APCO System</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>  <section class="timeline">
+    <div class="year">
+      <h3>2019</h3>
+      <p>Awal perjalanan Agile. Dimulai dengan integrasi teknologi seperti IoT, PLC, dan sistem data terhubung.</p>
+    </div>
+    <div class="year">
+      <h3>2020</h3>
+      <p>Fokus pada data dan people. Sistem mulai menangkap dan mengolah data dari berbagai sensor dan SCADA.</p>
+    </div>
+    <div class="year">
+      <h3>2021</h3>
+      <p>Kolaborasi internal diperkuat. Tim teknis mulai menyatu dengan pemangku kepentingan dan user.</p>
+    </div>
+    <div class="year">
+      <h3>2022</h3>
+      <p>Penerapan aksi nyata dari insight. Sistem asset & anomaly detection mulai diimplementasikan.</p>
+    </div>
+    <div class="year">
+      <h3>2023</h3>
+      <p>Business Insight mulai menjadi fokus. Digital twin, dashboard, dan analitik makin matang.</p>
+    </div>
+    <div class="year">
+      <h3>2024</h3>
+      <p>Platform siap untuk smart monitoring berskala besar. Fokus ke ESG Report, AEC, dan prediksi berbasis AI.</p>
+    </div>
+  </section>  <footer>
+    <p>© 2025 APCO - Agile Product Collaboration | Contact us on social media</p>
+  </footer>
+</body>
+</html>
